@@ -708,6 +708,51 @@ footer a{
    aria-label="WhatsApp">
   ☎
 </a>
+<!-- EMAIL CONTACT FORM -->
+<section id="contact-form" style="padding:50px 20px;background:#f5f7fa;">
+  <div style="max-width:650px;margin:auto;background:white;padding:30px;border-radius:15px;box-shadow:0 5px 20px rgba(0,0,0,0.1);">
+    <h2 style="text-align:center;margin-bottom:10px;">Book a Repair Service</h2>
+    <p style="text-align:center;color:#666;margin-bottom:25px;">
+      Send us your appliance repair enquiry
+    </p>
 
+    <form action="https://formsubmit.co/Appliancesrepair452@gmail.com" method="POST">
+
+      <input type="text" name="name" placeholder="Your Name" required
+      style="width:100%;padding:14px;margin-bottom:15px;border:1px solid #ddd;border-radius:8px;">
+
+      <input type="tel" name="phone" placeholder="Mobile Number" required
+      style="width:100%;padding:14px;margin-bottom:15px;border:1px solid #ddd;border-radius:8px;">
+
+      <input type="text" name="location" placeholder="Your Location" required
+      style="width:100%;padding:14px;margin-bottom:15px;border:1px solid #ddd;border-radius:8px;">
+
+      <select name="appliance" required
+      style="width:100%;padding:14px;margin-bottom:15px;border:1px solid #ddd;border-radius:8px;">
+        <option value="">Select Appliance</option>
+        <option>AC</option>
+        <option>Refrigerator</option>
+        <option>Washing Machine</option>
+        <option>Microwave</option>
+        <option>Oven</option>
+        <option>TV</option>
+        <option>Other</option>
+      </select>
+
+      <textarea name="message" placeholder="Describe your problem" required
+      style="width:100%;padding:14px;margin-bottom:15px;border:1px solid #ddd;border-radius:8px;min-height:120px;"></textarea>
+
+      <input type="hidden" name="_subject" value="New Appliance Repair Enquiry">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="table">
+
+      <button type="submit"
+      style="width:100%;padding:15px;background:#ffb000;color:#111;border:none;border-radius:8px;font-size:18px;font-weight:bold;">
+        Submit Request
+      </button>
+
+    </form>
+  </div>
+</section>
 </body>
 </html>
