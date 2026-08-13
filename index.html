@@ -4,243 +4,285 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>All in One Appliance Repair Mumbai | Home Appliance Repair</title>
+<title>All in One Appliance Repair Mumbai | AC, Fridge, Washing Machine & More</title>
 
-<meta name="description" content="All in One Appliance Repair Mumbai provides AC, refrigerator, washing machine, microwave, oven and TV repair services across Mumbai. Call or WhatsApp 8286739590.">
+<meta name="description" content="Professional home appliance repair service in Mumbai. AC, refrigerator, washing machine, microwave oven and TV repair service.">
+<meta name="keywords" content="appliance repair Mumbai, AC repair Mumbai, fridge repair Mumbai, washing machine repair Mumbai, microwave repair Mumbai, oven repair Mumbai, TV repair Mumbai">
 
 <style>
 *{
-  box-sizing:border-box;
   margin:0;
   padding:0;
+  box-sizing:border-box;
+  scroll-behavior:smooth;
 }
 
 body{
-  font-family:Arial,sans-serif;
-  background:#f5f7fb;
+  font-family:Arial,Helvetica,sans-serif;
+  background:#f5f7fa;
   color:#222;
   line-height:1.6;
 }
 
 header{
-  background:#0b57d0;
+  background:#111827;
   color:white;
-  text-align:center;
-  padding:25px 15px;
+  position:sticky;
+  top:0;
+  z-index:1000;
+  box-shadow:0 3px 15px rgba(0,0,0,.2);
 }
 
-header h1{
-  font-size:28px;
-  margin-bottom:6px;
+.nav{
+  max-width:1200px;
+  margin:auto;
+  padding:16px 20px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
 }
 
-header p{
-  font-size:16px;
+.logo{
+  font-size:22px;
+  font-weight:800;
+}
+
+.logo span{
+  color:#ffb703;
+}
+
+nav a{
+  color:white;
+  text-decoration:none;
+  margin-left:18px;
+  font-weight:600;
+}
+
+nav a:hover{
+  color:#ffb703;
 }
 
 .hero{
-  background:white;
+  background:linear-gradient(135deg,#111827,#1d4ed8);
+  color:white;
+  padding:85px 20px;
   text-align:center;
-  padding:40px 18px;
 }
 
-.hero h2{
-  font-size:30px;
-  margin-bottom:12px;
+.hero h1{
+  font-size:44px;
+  max-width:900px;
+  margin:auto;
+  line-height:1.15;
 }
 
 .hero p{
-  color:#555;
   max-width:700px;
-  margin:auto;
-  font-size:17px;
+  margin:20px auto;
+  font-size:18px;
+  opacity:.95;
 }
 
 .buttons{
-  margin-top:22px;
+  margin-top:30px;
 }
 
 .btn{
   display:inline-block;
-  padding:14px 24px;
+  padding:13px 24px;
   margin:6px;
   border-radius:8px;
   text-decoration:none;
-  font-weight:bold;
-  font-size:17px;
+  font-weight:700;
+  background:#ffb703;
+  color:#111;
 }
 
-.call{
-  background:#0b57d0;
-  color:white;
+.btn.dark{
+  background:white;
+  color:#111827;
 }
 
-.whatsapp{
-  background:#16a34a;
-  color:white;
-}
-
-.section{
-  max-width:1100px;
+section{
+  max-width:1200px;
   margin:auto;
-  padding:40px 15px;
+  padding:65px 20px;
 }
 
-.section h2{
+.title{
   text-align:center;
-  font-size:28px;
-  margin-bottom:25px;
+  margin-bottom:40px;
+}
+
+.title h2{
+  font-size:34px;
+  margin-bottom:8px;
+}
+
+.title p{
+  color:#666;
 }
 
 .services{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-  gap:18px;
+  gap:20px;
 }
 
-.service{
+.card{
   background:white;
-  padding:25px 18px;
-  text-align:center;
   border-radius:14px;
-  box-shadow:0 3px 12px rgba(0,0,0,.08);
+  overflow:hidden;
+  box-shadow:0 5px 20px rgba(0,0,0,.08);
+  transition:.3s;
 }
 
-.icon{
-  font-size:55px;
-  margin-bottom:10px;
+.card:hover{
+  transform:translateY(-5px);
 }
 
-.service h3{
-  font-size:21px;
+.card img{
+  width:100%;
+  height:180px;
+  object-fit:cover;
+  background:#ddd;
+}
+
+.card-content{
+  padding:20px;
+}
+
+.card h3{
   margin-bottom:8px;
+  color:#111827;
 }
 
-.service p{
+.card p{
   color:#666;
-  font-size:14px;
+  font-size:15px;
+}
+
+.about{
+  background:white;
+  border-radius:18px;
+  padding:35px;
+  box-shadow:0 5px 20px rgba(0,0,0,.06);
+}
+
+.about p{
   margin-bottom:15px;
 }
 
-.service a{
-  display:inline-block;
-  background:#0b57d0;
-  color:white;
-  padding:10px 16px;
-  border-radius:7px;
-  text-decoration:none;
-  font-weight:bold;
-}
-
-.areas{
-  background:white;
-  text-align:center;
-  padding:40px 18px;
-}
-
-.areas h2{
-  font-size:28px;
-  margin-bottom:12px;
-}
-
-.areas p{
-  max-width:850px;
-  margin:auto;
-  color:#555;
-}
-
-.why{
+.gallery{
   display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
   gap:15px;
 }
 
-.why div{
-  background:white;
-  padding:22px;
-  text-align:center;
+.gallery img{
+  width:100%;
+  height:230px;
+  object-fit:cover;
   border-radius:12px;
-  box-shadow:0 3px 10px rgba(0,0,0,.06);
+  box-shadow:0 4px 15px rgba(0,0,0,.12);
 }
 
-.why strong{
-  display:block;
-  font-size:18px;
+.contact-box{
+  background:#111827;
+  color:white;
+  padding:40px;
+  border-radius:18px;
+  text-align:center;
+}
+
+.contact-box h2{
+  font-size:32px;
+  margin-bottom:15px;
+}
+
+.contact-box p{
   margin:8px 0;
 }
 
-.contact{
-  background:#0b57d0;
-  color:white;
-  text-align:center;
-  padding:45px 15px;
-}
-
-.contact h2{
-  font-size:28px;
-  margin-bottom:10px;
-}
-
-.phone{
-  font-size:26px;
-  font-weight:bold;
-  margin:15px 0;
-}
-
-.phone a{
-  color:white;
+.contact-box a{
+  color:#ffb703;
   text-decoration:none;
+  font-weight:bold;
+}
+
+.policy{
+  background:white;
+  padding:30px;
+  border-radius:15px;
+  margin-bottom:20px;
+  box-shadow:0 4px 15px rgba(0,0,0,.05);
+}
+
+.policy h3{
+  margin-bottom:10px;
+  color:#111827;
 }
 
 footer{
-  background:#111;
+  background:#0b1120;
   color:#ddd;
   text-align:center;
-  padding:22px 12px;
-  font-size:14px;
+  padding:30px 20px;
 }
 
-.sticky{
-  position:fixed;
-  bottom:0;
-  left:0;
-  right:0;
-  display:flex;
-  z-index:9999;
-}
-
-.sticky a{
-  flex:1;
-  padding:15px;
-  text-align:center;
-  color:white;
+footer a{
+  color:#ffb703;
   text-decoration:none;
-  font-weight:bold;
-  font-size:16px;
+  margin:0 7px;
 }
 
-.sticky-call{
-  background:#0b57d0;
+.whatsapp{
+  position:fixed;
+  right:18px;
+  bottom:18px;
+  background:#25D366;
+  color:white;
+  width:58px;
+  height:58px;
+  border-radius:50%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-decoration:none;
+  font-size:28px;
+  box-shadow:0 5px 20px rgba(0,0,0,.25);
+  z-index:999;
 }
 
-.sticky-wa{
-  background:#16a34a;
-}
-
-@media(max-width:600px){
-
-  header h1{
-    font-size:23px;
+@media(max-width:700px){
+  .nav{
+    flex-direction:column;
+    gap:12px;
   }
 
-  .hero h2{
-    font-size:25px;
+  nav a{
+    margin:0 6px;
+    font-size:13px;
   }
 
-  .btn{
-    display:block;
-    max-width:310px;
-    margin:10px auto;
+  .hero{
+    padding:65px 18px;
+  }
+
+  .hero h1{
+    font-size:32px;
+  }
+
+  .hero p{
+    font-size:16px;
+  }
+
+  section{
+    padding:45px 15px;
+  }
+
+  .title h2{
+    font-size:28px;
   }
 }
 </style>
@@ -249,170 +291,423 @@ footer{
 <body>
 
 <header>
-<h1>All in One Appliance Repair Mumbai</h1>
-<p>Home Appliance Repair Service Across Mumbai</p>
+  <div class="nav">
+    <div class="logo">Appliances<span>Repair</span></div>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#gallery">Work</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
 </header>
 
-<section class="hero">
 
-<h2>Need Appliance Repair in Mumbai?</h2>
+<!-- HERO -->
+<section class="hero" id="home">
 
-<p>
-AC, Refrigerator, Washing Machine, Microwave, Oven and TV repair service
-for homes across Mumbai.
-</p>
+  <h1>All in One Appliance Repair Mumbai</h1>
 
-<div class="buttons">
+  <p>
+    Professional repair and service for AC, Refrigerator,
+    Washing Machine, Microwave, Oven, TV and other home appliances.
+  </p>
 
-<a class="btn call" href="tel:+918286739590">
-📞 Call Now
-</a>
-
-<a class="btn whatsapp"
-href="https://wa.me/918286739590?text=Hello%20All%20in%20One%20Appliance%20Repair%20Mumbai%2C%20I%20need%20appliance%20repair%20service."
-target="_blank">
-💬 WhatsApp
-</a>
-
-</div>
-</section>
-
-
-<section class="section">
-
-<h2>Our Appliance Repair Services</h2>
-
-<div class="services">
-
-<div class="service">
-<div class="icon">❄️</div>
-<h3>AC Repair</h3>
-<p>AC repair and service for home air conditioners across Mumbai.</p>
-<a href="tel:+918286739590">📞 Call for AC Service</a>
-</div>
-
-<div class="service">
-<div class="icon">🧊</div>
-<h3>Refrigerator Repair</h3>
-<p>Fridge and refrigerator repair service for cooling and other problems.</p>
-<a href="tel:+918286739590">📞 Call for Fridge Service</a>
-</div>
-
-<div class="service">
-<div class="icon">🧺</div>
-<h3>Washing Machine Repair</h3>
-<p>Top load, front load and semi automatic washing machine repair.</p>
-<a href="tel:+918286739590">📞 Call for Washing Machine</a>
-</div>
-
-<div class="service">
-<div class="icon">🔥</div>
-<h3>Microwave & Oven Repair</h3>
-<p>Microwave and oven repair service for home appliances.</p>
-<a href="tel:+918286739590">📞 Call for Microwave/Oven</a>
-</div>
-
-<div class="service">
-<div class="icon">📺</div>
-<h3>TV Repair</h3>
-<p>TV repair service for common television faults and problems.</p>
-<a href="tel:+918286739590">📞 Call for TV Service</a>
-</div>
-
-</div>
-</section>
-
-
-<section class="areas">
-
-<h2>Appliance Repair Service Across Mumbai</h2>
-
-<p>
-All in One Appliance Repair Mumbai provides home appliance repair services
-across Mumbai. Contact us for AC, refrigerator, washing machine, microwave,
-oven and TV repair service in your area.
-</p>
+  <div class="buttons">
+    <a class="btn" href="#contact">Book a Service</a>
+    <a class="btn dark" href="mailto:Appliancesrepair452@gmail.com">
+      Email Us
+    </a>
+  </div>
 
 </section>
 
 
-<section class="section">
+<!-- SERVICES -->
+<section id="services">
 
-<h2>Why Choose Us?</h2>
+  <div class="title">
+    <h2>Our Services</h2>
+    <p>Reliable home appliance repair services</p>
+  </div>
 
-<div class="why">
+  <div class="services">
 
-<div>
-📞
-<strong>Easy Booking</strong>
-Call or WhatsApp for service enquiry.
-</div>
+    <div class="card">
+      <img src="images/ac.jpg" alt="AC Repair Mumbai">
+      <div class="card-content">
+        <h3>AC Repair</h3>
+        <p>
+          Split AC and inverter AC repair, cooling problems,
+          gas charging, sensor, PCB and other faults.
+        </p>
+      </div>
+    </div>
 
-<div>
-🔧
-<strong>Multiple Appliances</strong>
-Repair service for multiple home appliances.
-</div>
 
-<div>
-📍
-<strong>All Mumbai Service</strong>
-Home appliance service across Mumbai.
-</div>
+    <div class="card">
+      <img src="images/fridge.jpg" alt="Refrigerator Repair Mumbai">
+      <div class="card-content">
+        <h3>Refrigerator Repair</h3>
+        <p>
+          Single door and double door refrigerator repair,
+          cooling issues, gas leakage, compressor and PCB problems.
+        </p>
+      </div>
+    </div>
 
-<div>
-💬
-<strong>Direct Enquiry</strong>
-Contact us directly for your repair requirement.
-</div>
 
-</div>
+    <div class="card">
+      <img src="images/washing-machine.jpg" alt="Washing Machine Repair Mumbai">
+      <div class="card-content">
+        <h3>Washing Machine</h3>
+        <p>
+          Front load and top load washing machine repair,
+          drain, spin, motor, PCB and water leakage problems.
+        </p>
+      </div>
+    </div>
+
+
+    <div class="card">
+      <img src="images/microwave.jpg" alt="Microwave Repair Mumbai">
+      <div class="card-content">
+        <h3>Microwave Oven</h3>
+        <p>
+          Microwave heating problems, PCB, magnetron,
+          capacitor and other appliance faults.
+        </p>
+      </div>
+    </div>
+
+
+    <div class="card">
+      <img src="images/oven.jpg" alt="Oven Repair Mumbai">
+      <div class="card-content">
+        <h3>Oven Repair</h3>
+        <p>
+          Oven heating, thermostat, wiring, control board
+          and electrical fault diagnosis.
+        </p>
+      </div>
+    </div>
+
+
+    <div class="card">
+      <img src="images/tv.jpg" alt="TV Repair Mumbai">
+      <div class="card-content">
+        <h3>TV Repair</h3>
+        <p>
+          LED and Smart TV diagnosis, power problems,
+          display issues, PCB and other faults.
+        </p>
+      </div>
+    </div>
+
+  </div>
 </section>
 
 
-<section class="contact">
+<!-- WORK GALLERY -->
+<section id="gallery">
 
-<h2>Book Appliance Repair Service</h2>
+  <div class="title">
+    <h2>Our Repair Work</h2>
+    <p>Some of our appliance repair work</p>
+  </div>
 
-<p>Call or WhatsApp us for your appliance repair requirement.</p>
+  <div class="gallery">
 
-<div class="phone">
-<a href="tel:+918286739590">📞 8286739590</a>
-</div>
+    <img src="images/work-fridge.jpg" alt="Refrigerator repair work">
 
-<a class="btn whatsapp"
-href="https://wa.me/918286739590?text=Hello%2C%20I%20need%20appliance%20repair%20service%20in%20Mumbai."
-target="_blank">
-💬 Contact on WhatsApp
-</a>
+    <img src="images/work-fridge-inside.jpg" alt="Refrigerator technical repair">
+
+    <img src="images/work-pcb.jpg" alt="Appliance PCB repair">
+
+    <img src="images/work-washing-machine.jpg" alt="Washing machine repair">
+
+    <img src="images/work-ac.jpg" alt="AC service work">
+
+    <img src="images/work-ac-technician.jpg" alt="AC technician">
+
+    <img src="images/work-ac-service.jpg" alt="AC repair service">
+
+    <img src="images/work-technician.jpg" alt="Appliance technician">
+
+  </div>
 
 </section>
 
 
+<!-- ABOUT -->
+<section id="about">
+
+  <div class="title">
+    <h2>About Us</h2>
+  </div>
+
+  <div class="about">
+
+    <p>
+      <strong>All in One Appliance Repair Mumbai</strong>
+      provides professional home appliance repair and service.
+    </p>
+
+    <p>
+      We work on AC, refrigerators, washing machines,
+      microwave ovens, ovens, TVs and other household appliances.
+    </p>
+
+    <p>
+      Our focus is proper fault diagnosis, transparent service
+      and reliable repair solutions.
+    </p>
+
+    <p>
+      Service availability and charges may depend on the appliance,
+      fault, location and required spare parts.
+    </p>
+
+  </div>
+
+</section>
+
+
+<!-- CONTACT -->
+<section id="contact">
+
+  <div class="contact-box">
+
+    <h2>Contact Us</h2>
+
+    <p>Need appliance repair service?</p>
+
+    <p>
+      Email:
+      <a href="mailto:Appliancesrepair452@gmail.com">
+        Appliancesrepair452@gmail.com
+      </a>
+    </p>
+
+    <p>
+      Service Area: Mumbai
+    </p>
+
+    <div class="buttons">
+      <a class="btn" href="mailto:Appliancesrepair452@gmail.com">
+        Send Enquiry
+      </a>
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- PRIVACY POLICY -->
+<section id="privacy">
+
+  <div class="title">
+    <h2>Privacy Policy</h2>
+  </div>
+
+  <div class="policy">
+
+    <h3>Information We Collect</h3>
+
+    <p>
+      We may receive information that customers voluntarily provide
+      when contacting us, such as name, phone number, email address,
+      service address and appliance details.
+    </p>
+
+    <h3>How We Use Information</h3>
+
+    <p>
+      Information may be used to respond to enquiries,
+      schedule services, provide repair assistance and communicate
+      with customers regarding their service request.
+    </p>
+
+    <h3>Information Protection</h3>
+
+    <p>
+      We take reasonable steps to protect customer information.
+      We do not intentionally sell personal information to third parties.
+    </p>
+
+    <h3>Third-Party Services</h3>
+
+    <p>
+      Our website may use third-party services such as hosting,
+      analytics or communication platforms. Their own privacy policies
+      may apply.
+    </p>
+
+  </div>
+
+</section>
+
+
+<!-- TERMS -->
+<section id="terms">
+
+  <div class="title">
+    <h2>Terms & Conditions</h2>
+  </div>
+
+  <div class="policy">
+
+    <h3>Service Requests</h3>
+
+    <p>
+      Submitting an enquiry does not automatically guarantee service
+      until the service request is confirmed.
+    </p>
+
+    <h3>Inspection & Diagnosis</h3>
+
+    <p>
+      Appliance faults may require physical inspection.
+      Final repair requirements and charges may be determined
+      after diagnosis.
+    </p>
+
+    <h3>Spare Parts</h3>
+
+    <p>
+      Replacement parts may be subject to availability.
+      Genuine, compatible or equivalent parts may be offered depending
+      on the appliance and customer requirements.
+    </p>
+
+    <h3>Service Charges</h3>
+
+    <p>
+      Charges can vary according to appliance type, fault,
+      location, labour and spare parts.
+    </p>
+
+  </div>
+
+</section>
+
+
+<!-- SERVICE POLICY -->
+<section>
+
+  <div class="title">
+    <h2>Service Policy</h2>
+  </div>
+
+  <div class="policy">
+
+    <p>
+      Customers should provide accurate appliance information
+      when booking a service.
+    </p>
+
+    <p>
+      Any existing physical damage or previous repair work may affect
+      diagnosis and repair.
+    </p>
+
+    <p>
+      Warranty, if offered on a particular repair or replacement part,
+      will depend on the terms communicated at the time of service.
+    </p>
+
+  </div>
+
+</section>
+
+
+<!-- REFUND / CANCELLATION -->
+<section>
+
+  <div class="title">
+    <h2>Cancellation & Refund Policy</h2>
+  </div>
+
+  <div class="policy">
+
+    <p>
+      Service appointments may be cancelled or rescheduled by contacting
+      us as early as possible.
+    </p>
+
+    <p>
+      Any inspection, visit or completed service charges may be
+      non-refundable depending on the service already provided.
+    </p>
+
+    <p>
+      Spare parts ordered specifically for a customer may be subject
+      to supplier return policies.
+    </p>
+
+  </div>
+
+</section>
+
+
+<!-- DISCLAIMER -->
+<section>
+
+  <div class="title">
+    <h2>Disclaimer</h2>
+  </div>
+
+  <div class="policy">
+
+    <p>
+      Information on this website is provided for general information
+      and service enquiry purposes.
+    </p>
+
+    <p>
+      Appliance brands and product names mentioned on this website
+      belong to their respective trademark owners.
+      We are not necessarily affiliated with or authorised by those
+      manufacturers unless specifically stated.
+    </p>
+
+    <p>
+      Actual repair results may vary depending on appliance condition,
+      age, fault and availability of replacement parts.
+    </p>
+
+  </div>
+
+</section>
+
+
+<!-- FOOTER -->
 <footer>
 
-<p>© 2026 All in One Appliance Repair Mumbai</p>
+  <p>
+    © 2026 All in One Appliance Repair Mumbai.
+    All Rights Reserved.
+  </p>
 
-<p>
-AC • Refrigerator • Washing Machine • Microwave • Oven • TV Repair
-</p>
+  <p>
+    <a href="#privacy">Privacy Policy</a> |
+    <a href="#terms">Terms & Conditions</a> |
+    <a href="#contact">Contact</a>
+  </p>
 
 </footer>
 
 
-<div class="sticky">
-
-<a class="sticky-call" href="tel:+918286739590">
-📞 CALL NOW
+<!-- WHATSAPP -->
+<a class="whatsapp"
+   href="https://wa.me/"
+   target="_blank"
+   aria-label="WhatsApp">
+  ☎
 </a>
-
-<a class="sticky-wa"
-href="https://wa.me/918286739590?text=Hello%2C%20I%20need%20appliance%20repair%20service%20in%20Mumbai."
-target="_blank">
-💬 WHATSAPP
-</a>
-
-</div>
 
 </body>
 </html>
